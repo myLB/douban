@@ -1,27 +1,54 @@
 # douban
+这是一个仿别人的项目，主要用了vue2 + vue-router2 + vuex + axios + el-ui,之前没写过移动端的，就仿了一下，算是一个完整的demo，
+除了数据是原作者的，其他都是自己编写的，vue之前用过但是其他的没怎么用过，就像仿个项目试试，包括一些vue的插件，总体来说还是挺好的。
 
-> a copy project
 
-## Build Setup
+### 项目地址: (`git clone`)
 
-``` bash
-# install dependencies
+```shell
+git clone https://github.com/myLB/douban.git
+
+
+### 安装
+
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 运行
+
+```
+npm run dev
+```
+
+### 技术栈
+
+* vue2
+* vue-router2
+* vuex
+* vue-cli
+* es6/es7
+* axios
+* vue-infinite-scroll
+* vue-lazyload
+
+<pre>
+.
+├── README.md
+├── build              // 构建服务和webpack配置
+├── config             // 项目不同环境的配置
+├── index.html         // 项目入口文件
+├── package.json       // 项目配置文件
+├── test               // 没用到
+├── src
+│   ├── assets         // css js 和图片资源
+│   ├── components     // 各种组件
+│   ├── mock           // 模拟数据
+│   ├── pages          // 各页面
+│   ├── router         // 存放路由的文件夹
+│   ├── store	          // 状态管理store
+│     ├── App.Vue        // 模板文件入口
+│   └── main.js        // Webpack 预编译入口
+│
+
+</pre>
