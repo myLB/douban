@@ -32,6 +32,8 @@ npm run dev
 * vue-infinite-scroll
 * vue-lazyload
 
+### 项目结构
+
 <pre>
 .
 ├── README.md
