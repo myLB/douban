@@ -7,6 +7,7 @@
 </template>
 
 <script>
+  import commom from './assets/js/common'
   export default {
     name: 'app',
   }

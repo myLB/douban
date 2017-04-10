@@ -44,7 +44,7 @@
         /*fixed导航*/
       },
       mounted(){
-        window.addEventListener('scroll',this.handlerScroll)
+        window.addEventListener('scroll',this.handlerScroll);
       }
   }
 </script>
