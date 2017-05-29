@@ -7,6 +7,7 @@ import 'element-ui/lib/theme-default/index.css'
 import infiniteScroll from 'vue-infinite-scroll'
 import VueLazyLoad from 'vue-lazyload'
 import loading_image from './assets/images/loading.gif'
+import 'font-awesome-webpack'
 /*懒加载图片*/
 Vue.use(ElementUI)
 Vue.use(infiniteScroll)

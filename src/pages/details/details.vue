@@ -57,14 +57,20 @@
               {nav:'讨论',loading:'200%',view:'DetailDiscuss'},
             ],
             plan:'translateX(0)',//border位移变化
-            view:'ProductDetail'//动态组件替换
+            view:'ProductDetail',//动态组件替换
+            kk:[['mm','bb']]
         }
     },
     methods:{
         trans_component(list){
           this.plan='translateX('+list.loading+')';
           this.view=list.view;
-          console.log(this.view)
+          /*console.log(this.view);*/
+          var mm=this.kk[0];
+          mm.push('nn');
+          console.log(mm);
+          this.$set(this.kk,'[0]',mm);//set的改动，vue用proxy写的
+          console.log(this.kk);
         }
         /*点击改变组件和border位移*/
     },

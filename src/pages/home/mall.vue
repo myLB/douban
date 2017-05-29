@@ -27,7 +27,8 @@
         return {
           options:{
             initialSlide:1,//初始化时设置下标
-            autoplay: 1000,//循环时间
+            autoplay: 3000,//循环时间
+            speed:5000,
             loop: true,//环路
             paginationHide:true,
             pagination : '.swiper-pagination',//分页器

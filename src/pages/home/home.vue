@@ -22,7 +22,8 @@
       name:'home',
       data(){
           return {
-            fixed:false
+            fixed:false,
+            bb:this.aa()
           }
       },
       components:{
@@ -40,11 +41,22 @@
             }else {
                 this.fixed=false;
             }
-        }
+        },
         /*fixed导航*/
+        aa(){
+            return 'mmmm'
+        }
       },
       mounted(){
         window.addEventListener('scroll',this.handlerScroll);
+        /*添加事件*/
+        console.log(this.$router);//VueRouter实例对象
+        console.log(this.$route);//路径信息对象
+        console.log(this.bb)
+      },
+      destroyed(){
+        window.removeEventListener('scroll',this.handlerScroll);
+        /*移除事件*/
       }
   }
 </script>
